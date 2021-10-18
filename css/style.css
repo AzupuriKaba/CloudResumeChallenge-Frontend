@@ -825,3 +825,10 @@ img {
 	height: 471px;
 	padding: 0 10px 0 0;
 }
+
+my_img {
+	float: right;
+	wifth: 331px;
+	height: 292px;
+	padding: 0 10px 0 0;
+}
