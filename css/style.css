@@ -818,27 +818,4 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 
-<!-----For visitor's Count---->
 
-@import url("https: //fonts.googleaps.com/css?family=Muli&display=swap");
-
-* {
-  box-sizing: border-box;
-}
-
-div {
-  color: #fff;
-  font-family: "Muli", sans-serif;
-  background-color: #192a56;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-
-div {
-  font-size: 50px;
-  margin: 0;
-}
