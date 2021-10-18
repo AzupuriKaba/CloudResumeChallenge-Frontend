@@ -819,16 +819,20 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 
-img {
+.project_management_attributes {
 	float: right;
 	wifth: 483px;
 	height: 471px;
 	padding: 0 10px 0 0;
 }
 
-my_img {
+.quality_attributes {
 	float: right;
 	wifth: 331px;
 	height: 292px;
 	padding: 0 10px 0 0;
+}
+
+ul {
+	text-align: justify;
 }
