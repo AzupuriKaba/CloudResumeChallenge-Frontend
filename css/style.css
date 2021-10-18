@@ -205,7 +205,8 @@ hr {
 p {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
-	ont-size: 16px;
+	font-size: 16px;
+	text-align: justify;
 }
 
 b,
@@ -818,4 +819,9 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 
-
+img {
+	float: right;
+	wifth: 483px;
+	height: 471px;
+	padding: 0 10px 0 0;
+}
