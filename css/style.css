@@ -228,8 +228,9 @@ em {
 
 ol,
 ul {
-	padding: 50;
+	padding: 25;
 	margin: 0;
+	text-align: justify;
 }
 
 /* Header */
@@ -838,6 +839,3 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding: 0 10px 0 0;
 }
 
-ul {
-	text-align: justify;
-}
