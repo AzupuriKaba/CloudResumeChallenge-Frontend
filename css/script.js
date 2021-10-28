@@ -1,9 +1,7 @@
 
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-       document.getElementById("hits").innerHTML = xhttp.responseText;
-    }
-};
-xhttp.open("GET", "https://7u04hfdb9e.execute-api.us-east-2.amazonaws.com/prod/num", true);
-xhttp.send();
+feetch("https://52gmtwhz23.execute-api.us-east-1.amazonaws.com/Prod/put")
+    .then(() => fetch("https://52gmtwhz23.execute-api.us-east-1.amazonaws.com/Prod/get"))
+    .then(response => response.json())
+    .then((resumeHttp) => {
+        document.getElementById("Website_Views").innerText = resumehttp.count;
+    })
