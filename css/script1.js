@@ -31,3 +31,4 @@ window.onload = function(){
         // getLoadCount() updates field in footer, increments count in DB
         getLoadCount();
     }; //end window.onload 
+    }; //end window.onload my name
