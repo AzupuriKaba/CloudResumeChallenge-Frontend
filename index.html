@@ -7,11 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Azupuri Kaba's Solution TO Cloud Resume Challenge</title>
 
-
         <script>
-            (function (d, e) {
-                d[e] = d[e].replace("no-js", "js");
-            })(document.documentElement, "className");
+            feetch("https://52gmtwhz23.execute-api.us-east-1.amazonaws.com/Prod/put")
+                .then(() => fetch("https://52gmtwhz23.execute-api.us-east-1.amazonaws.com/Prod/get"))
+                .then(response => response.json())
+                .then((resumeHttp) => {
+                    document.getElementById("Website_Views").innerText = resumehttp.count;
+            })
         </script>
 
 
@@ -252,7 +254,7 @@
             </footer>
         </div>
 <!-- Visitors' Counter-->
-        <script src="./css/script.js"></script>
-        <script async="" defer="" src="./css/menu.js.download"></script>
+        <!-- script src="./css/script.js"></script-->
+        <!-- script async="" defer="" src="./css/menu.js.download"></script-->
     </body>
 </html>
