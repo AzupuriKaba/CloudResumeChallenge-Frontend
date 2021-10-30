@@ -30,4 +30,4 @@ window.onload = function(){
         // side effects
         // getLoadCount() updates field in footer, increments count in DB
         getLoadCount();
-    }; //end window.onload nn
+    }; //end window.onload
