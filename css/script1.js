@@ -6,7 +6,7 @@ function getLoadCount(){
     // Note call is synchronous, delays should be minimal
     var req = new XMLHttpRequest();  
     req.open('GET', 
-    "https://b0loqewbih.execute-api.us-east-1.amazonaws.com/Prod/count", 
+    "https://r51wmmqcxh.execute-api.us-east-1.amazonaws.com/Prod/count", 
     false);   
     req.send();  
     if(req.status == 200)
