@@ -9,6 +9,17 @@
         
         <meta name="description" content="Portfolio website hosted serverless on AWS. Submission for the resume challenge" />
 
+        <script>
+            var counter = new XMLHttpRequest();
+            counter.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                   document.getElementById("views").innerHTML = counter.responseText;
+                }
+            };
+            counter.open("GET", "https://rbdlmsev9i.execute-api.us-east-1.amazonaws.com/Prod/hello", true);
+            counter.send();
+          </script>
+
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
         <!---link rel="stylesheet" href="./css/style2.css" /--->
@@ -237,14 +248,11 @@
             <footer class="footer">
                 <div class="container footer__container flex">
                     <div class="footer__copyright">
-                        This website is built with passion on AWS Serverless Infrastructure. You are visitor #
-                        <div id="numberofvisits"></div>
+                         You are visitor #
+                        <div id="views"></div>
                     </div>
                 </div>
             </footer>
         </div>
-<!-- Visitors' Counter-->
-        <script src="./css/script.js"></script>
-        <!-- script async="" defer="" src="./css/menu.js.download"></script-->
     </body>
 </html>
