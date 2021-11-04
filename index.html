@@ -13,7 +13,7 @@
             var counter = new XMLHttpRequest();
             counter.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                   document.getElementById("website_views").innerHTML = counter.responseText;
+                   document.getElementById("views").innerHTML = counter.responseText;
                 }
             };
             counter.open("GET", "https://34qfd2kwe3.execute-api.us-east-1.amazonaws.com/Prod/visitor", true);
@@ -249,7 +249,7 @@
                 <div class="container footer__container flex">
                     <div class="footer__copyright">
                          You are visitor #
-                        <div id="website_views"></div>
+                        <div id="views"></div>
                     </div>
                 </div>
             </footer>
