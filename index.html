@@ -10,13 +10,15 @@
         <meta name="description" content="Portfolio website hosted serverless on AWS. Submission for the resume challenge" />
 
         <script>
-            var counter = new XMLHttpRequest();
+             var counter = new XMLHttpRequest();
+             
+            counter.open("GET", "https://08qc40b79a.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
+           
             counter.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                    document.getElementById("views").innerHTML = counter.responseText;
                 }
             };
-            counter.open("GET", "https://08qc40b79a.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
             counter.send();
           </script>
 
