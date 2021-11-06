@@ -12,13 +12,12 @@
         <script>
             var xhr = new XMLHttpRequest();
              
-            xhr.open("GET", "https://08qc40b79a.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
-           
             xhr.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                    document.getElementById("visitor_id").innerHTML = xhr.responseText;
                 }
             };
+            xhr.open("GET", "https://riaqwspx13.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
             xhr.send();
           </script>
 
@@ -30,7 +29,6 @@
         <link rel="shortcut icon" href="favicon.ico">
 
         <style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style>
-
     </head>
     <body class="body">
         <div class="container">
