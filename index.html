@@ -10,16 +10,16 @@
         <meta name="description" content="Portfolio website hosted serverless on AWS. Submission for the resume challenge" />
 
         <script>
-             var counter = new XMLHttpRequest();
+            var xhr = new XMLHttpRequest();
              
-            counter.open("GET", "https://08qc40b79a.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
+            xhr.open("GET", "https://08qc40b79a.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
            
-            counter.onreadystatechange = function() {
+            xhr.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                   document.getElementById("views").innerHTML = counter.responseText;
+                   document.getElementById("visitor_id").innerHTML = xhr.responseText;
                 }
             };
-            counter.send();
+            xhr.send();
           </script>
 
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
@@ -251,7 +251,7 @@
                 <div class="container footer__container flex">
                     <div class="footer__copyright">
                          You are visitor #
-                        <div id="views"></div>
+                        <div id="visitor_id"></div>
                     </div>
                 </div>
             </footer>
