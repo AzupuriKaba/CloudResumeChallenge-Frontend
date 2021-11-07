@@ -5,22 +5,22 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Azupuri Kaba's Solution TO Cloud Resume Challenge</title>
+        <title>Cloud Resume Challenge</title>
         
         <meta name="description" content="Portfolio website hosted serverless on AWS. Submission for the resume challenge" />
 
         <script>
-            var xhr = new XMLHttpRequest();
+            var crc = new XMLHttpRequest();
              
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === xhr.DONE) {
-                    if (xhr.status === 200) {
-                        document.getElementById("visitor_id").innerHTML = xhr.responseText;
+            crc.onreadystatechange = function() {
+                if (crc.readyState === crc.DONE) {
+                    if (crc.status === 200) {
+                        document.getElementById("views").innerHTML = crc.responseText;
                     }
                 }
             };
-            xhr.open("GET", "https://riaqwspx13.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
-            xhr.send();
+            crc.open("GET", "https://riaqwspx13.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
+            crc.send();
         </script>
            
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
@@ -251,7 +251,7 @@
                 <div class="container footer__container flex">
                     <div class="footer__copyright">
                          You are visitor No.: 
-                        <span id="visitor_id"></span>
+                        <span id="views"></span>
                     </div>
                 </div>
             </footer>
