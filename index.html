@@ -14,12 +14,14 @@
              
             xhr.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                   document.getElementById("visitor_id").innerHTML = xhr.responseText;
+                   document.getElementById("hcount").innerHTML = xhr.responseText;
                 }
             };
             xhr.open("GET", "https://riaqwspx13.execute-api.us-east-1.amazonaws.com/Stage/visitor_id", true);
             xhr.send();
-          </script>
+        </script>
+
+        
 
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
@@ -248,8 +250,8 @@
             <footer class="footer">
                 <div class="container footer__container flex">
                     <div class="footer__copyright">
-                         You are visitor #
-                        <div id="visitor_id"></div>
+                         You are visitor #: 
+                        <div id="hcount"></div>
                     </div>
                 </div>
             </footer>
