@@ -41,7 +41,7 @@
                                 <div class="logo__title">Azupuri G. A. Kaba, Ph.D., P.E., P.M.P.</div>
                                 
                                 <div class="logo__tagline">
-                                    <a class="logo_contact">Albuquerque, NM | aakxd8@mst.edu | +1 (573) 201-9553</a>
+                                    <a class="logo_contact">Albuquerque, NM | azupuri.kaba12@outlook.com | +1 (573) 201-9553</a>
                                 </div>
                                 <div class="logo__tagline">
                                     <a class="logo_social-media" href="https://www.linkedin.com/in/azupuri-kaba"target="_blank">LinkedIn</a> | 
@@ -92,21 +92,36 @@
                             <header class="list__header">
                                 <h3>RELATED PROJECTS</h3>
                                 <h5 class="list__title post__title">
-                                        The Cloud Resume Challenge
+                                        Cloud Resume Challenge
                                 </h5>
-                                <div class="list__meta meta">
-                                    <div class="meta__item-datetime meta__item">
-                                        <svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28">
-                                            <path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"></path>
-                                        </svg>
-                                        <time class="meta__text" datetime="2020-07-01T00:00:00Z">November 2021</time>
-                                    </div>
-                                </div>
                             </header>
                             <div class="content list__excerpt post__content clearfix">
                                 <p>
-                                    Describe cloud resume challenge. 
+                                    The objective of the Cloud Resume Challenge is to help participants build and demonstrate fundamental skills necessary to pursuing a career as AWS Cloud Engineer. The challenge consists of two parts, a frontend and a backend. In the frontend, I developed a website, which hosted my resume using HTML and CSS. This is website is continuously deployed to AWS s3 bucket and CloudFront CDN through CI/CD pipeline that runs on GitHub Actions. For provisioning the backed infrastructure, a separate CI/CD pipeline that runs on GitHub action is used to automate the continuous deployment of AWS SAM / CloudFormation artifacts. A RESTful API is created in AWS API Gateway is powered by AWS Lambda (running Python) handles updates to a DynamoDB table. I integrated Py unit test framework to test the python code. Details of my solution to the Cloud Resume Challenge can be found here. Below are the challenge components and AWS resources used to achieve the objective of the challenge. 
                                 </p>
+                            </div>
+                            <div class="custom_list">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>s3 Static Web hosting</li>
+                                    <li>s3</li>
+                                    <li>DNS</li>
+                                    <li>JavaScript</li>
+                                    <li>API</li>
+                                    <li>Python</li>
+                                    <li>Tests</li>
+                                    <li>Infrastructure as Code</li>
+                                    <li>rontend/BackendCI/CD F</li>
+                                    <li>IAM</li>
+                                    <li>CloudFront</li>
+                                    <li>Lambda</li>
+                                    <li>Route53</li>
+                                    <li>DynamoDB</li>
+                                    <li>SAM (Serverless Application Framework</li>
+                                    <li>CloudFormation</li>
+                                    <li>AWS CLI</li>
+                                </ul>
                             </div>
                         </article>
                         <article class="list__item post">
@@ -114,19 +129,34 @@
                                 <h5 class="list__title post__title">
                                     Intellipaat AWS Training Project
                                 </h5>
-                                <div class="list__meta meta">
-                                    <div class="meta__item-datetime meta__item">
-                                        <svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28">
-                                            <path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"></path>
-                                        </svg>
-                                        <time class="meta__text" datetime="2019-03-10T00:00:00Z">August, 2021</time>
-                                    </div>
-                                </div>
                             </header>
                             <div class="content list__excerpt post__content clearfix">
                                 <p>
-                                    Describe project carried out. 
+                                    This project developed a 3-tier application for a company XYZ running several AWS resources. The figure and list below show the architecture and list of AWS resources used to achieve the objectives of this project. The purpose of the application is to collect and store new employees’ information including photos, and occasionally retrieve the information for real time processing. The application runs on EC2 instance hosted in a private subnet. Employee information is collected and stored in RDS, s3 and DynamoDB while elastic load balancer is used to directing traffic to the application. NACL, NAT gateway and Internet gateway and security group are used to secure and control access to the application and databases. SNS and CloudWatch for tracking and notification purposes whenever a new employee information is added to the application.  
                                 </p>
+                            </div>
+                            <center>
+                            <img class="three_tier_architecture" src="./images/aws_architecture.JPG" height="380px" width="725px">
+                            </center>
+                            <div class="custom_list">
+                                <ul>
+                                    <li>VPC</li>
+                                    <li>Subnets</li>
+                                    <li>Route53</li>
+                                    <li>s3</li>
+                                    <li>DNS</li>
+                                    <li>EC2</li>
+                                    <li>RDS</li>
+                                    <li>IAM</li>
+                                    <li>Security Groups</li>
+                                    <li>Infrastructure as Code</li>
+                                    <li>NACL</li>
+                                    <li>NAT Gateway</li>
+                                    <li>Auto Scaling</li>
+                                    <li>Internet Gateway</li>
+                                    <li>Elastic laod balancer</li>
+                                    <li>SNS</li>
+                                </ul>
                             </div>
                         </article>
                        
