@@ -494,7 +494,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__title {
-	margin: 0;
+	margin-top: 20px;
 }
 
 .post__meta {
@@ -841,4 +841,22 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .custom_list {
     column-count:3;
+}
+
+.key_skills {
+	align-items: center;
+	justify-content: center;
+	column-count:2;
+	margin: 0px 100px 0px 100px;
+}
+
+.skills_header {
+	font-size: 24px;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #1805db;
+	margin-bottom: 0px;
+}
+skills_list {
+	list-style-type: none;
 }
